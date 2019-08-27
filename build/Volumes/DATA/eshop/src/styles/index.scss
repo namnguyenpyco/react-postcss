@@ -1,0 +1,347 @@
+body {
+  font-size: 16px;
+}
+li {
+  list-style: none;
+}
+.u-clearfix::before {
+  content: '';
+  display: table;
+}
+.u-clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+::-webkit-input-placeholder {
+  color: gray;
+}
+::-moz-placeholder {
+  color: gray;
+}
+:-ms-input-placeholder {
+  color: gray;
+}
+::-ms-input-placeholder {
+  color: gray;
+}
+::placeholder {
+  color: gray;
+}
+.my-link {
+  background: #000000;
+  background: #000000;
+  padding: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.grid {
+    display: block;
+    margin: 0 auto;
+}
+.grid li {
+    list-style: none;
+    background: #42cafd;
+    text-align: center;
+    height: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+}
+.grid-6 {
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+}
+.grid-6:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+.grid-6:last-child {
+    margin-right: 0;
+}
+.grid-6:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+.grid-6:nth-child(1n + 1) {
+    clear: both;
+}
+@media (min-width: 400px) {
+    .grid-6 li {
+        width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+        margin-bottom: 2rem;
+    }
+    .grid-6 li:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+    .grid-6 li:last-child {
+        margin-right: 0;
+    }
+    .grid-6 li:nth-child(3n) {
+        margin-right: 0;
+        float: right;
+    }
+    .grid-6 li:nth-child(3n + 1) {
+        clear: both;
+    }
+}
+@media (min-width: 900px) {
+    .grid-6 li {
+        width: calc(99.9% * 1/6 - (30px - 30px * 1/6));
+    }
+    .grid-6 li:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+    .grid-6 li:last-child {
+        margin-right: 0;
+    }
+    .grid-6 li:nth-child(6n) {
+        margin-right: 0;
+        float: right;
+    }
+    .grid-6 li:nth-child(6n + 1) {
+        clear: both;
+    }
+}
+.row {
+    display: block;
+    margin-bottom: 1rem;
+}
+.row h2 {
+        text-align: center;
+        color: rgba(255, 0, 0, 0.85);
+        color: rgba(255, 0, 0, 0.85);
+    }
+.box {
+    display: inline-block;
+    background: #ff0000;
+    margin-left: 2rem;
+}
+.grid .offset li {
+    width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+}
+.grid .offset li:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+.grid .offset li:last-child {
+    margin-right: 0;
+}
+.grid .offset li:nth-child(3n) {
+    margin-right: 0;
+    float: right;
+}
+.grid .offset li:nth-child(3n + 1) {
+    clear: both;
+}
+.grid .offset li:first-child {
+    margin-left: calc(99.9% * (-1/3 * -1) - (30px - 30px * (-1/3 * -1)) + 30px) !important;
+}
+.grid .nesting li {
+    width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+}
+.grid .nesting li:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+.grid .nesting li:last-child {
+    margin-right: 0;
+}
+.grid .nesting li:nth-child(3n) {
+    margin-right: 0;
+    float: right;
+}
+.grid .nesting li:nth-child(3n + 1) {
+    clear: both;
+}
+.grid .nesting li:nth-child(3) {
+    background: transparent;
+}
+.grid .nesting li div {
+        width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+        background: #ff0000;
+        margin-bottom: 1rem;
+    }
+.grid .nesting li div:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+.grid .nesting li div:last-child {
+        margin-right: 0;
+    }
+.grid .nesting li div:nth-child(2n) {
+        margin-right: 0;
+        float: right;
+    }
+.grid .nesting li div:nth-child(2n + 1) {
+        clear: both;
+    }
+.grid .align {
+    position: relative;
+    background: #42cafd;
+    height: 20rem;
+}
+.grid .align li {
+        width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+        background: #ff0000;
+    }
+.grid .align li:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+.grid .align li:last-child {
+        margin-right: 0;
+    }
+.grid .align li:nth-child(3n) {
+        margin-right: 0;
+        float: right;
+    }
+.grid .align li:nth-child(3n + 1) {
+        clear: both;
+    }
+.grid .align > * {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.grid .align > * li {
+    }
+.grid .cycle {
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+}
+.grid .cycle:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+.grid .cycle:last-child {
+    margin-right: 0;
+}
+.grid .cycle:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+.grid .cycle:nth-child(1n + 1) {
+    clear: both;
+}
+.grid .cycle li {
+    height: auto;
+    line-height: 1.5rem;
+    font-weight: normal;
+    width: calc(99.9% * 2/8 - (30px - 30px * 2/8));
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+.grid .cycle li:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+.grid .cycle li:last-child {
+    margin-right: 0;
+}
+.grid .cycle li:nth-child(4n) {
+    margin-right: 0;
+    float: right;
+}
+.grid .cycle li:nth-child(4n + 1) {
+    clear: both;
+}
+.grid .vertical {
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+}
+.grid .vertical:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+.grid .vertical:last-child {
+    margin-right: 0;
+}
+.grid .vertical:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+.grid .vertical:nth-child(1n + 1) {
+    clear: both;
+}
+.grid .vertical li {
+    width: 100%;
+    height: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+    margin-bottom: 30px;
+}
+.grid .vertical li:last-child {
+    margin-bottom: 0;
+}
+.grid .waffle {
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+}
+.grid .waffle:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+.grid .waffle:last-child {
+    margin-right: 0;
+}
+.grid .waffle:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+.grid .waffle:nth-child(1n + 1) {
+    clear: both;
+}
+.grid .waffle li {
+    width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+    max-width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+    height: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+}
+.grid .waffle li:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    clear: none;
+}
+.grid .waffle li:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.grid .waffle li:nth-child(3n) {
+    margin-right: 0;
+}
+.grid .waffle li:nth-child(3n + 1) {
+    clear: both;
+}
+.grid .waffle li:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+.px {
+    height: 32px;
+    line-height: 32px;
+}
+.rem {
+    height: 2rem;
+    line-height: 2rem;
+}
+.em {
+    font-size: 16px;
+    height: 2em;
+    line-height: 2em;
+}

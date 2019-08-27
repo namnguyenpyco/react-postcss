@@ -1,0 +1,125 @@
+.grid {
+  display: block;
+  margin: 0 auto;
+}
+
+.grid li {
+  list-style: none;
+  background: #42cafd;
+  height: $spacing-nano;
+  text-align: center;
+  height: var(--box-width);
+  line-height: 5rem;
+}
+
+.grid-6 {
+  lost-column: 1/1;
+
+  li {
+      &:hover {
+          background: var(--main-color);
+      }
+  }
+}
+
+
+@include for-phone {
+    .grid-6 li {
+    lost-column: 1/2;
+    margin-bottom: 2rem;
+    }
+}
+
+@include for-tablet {
+    .grid-6 li {
+    lost-column: 1/3;
+    }
+}
+
+@include for-desktop {
+    .grid-6 li {
+    lost-column: 1/6;
+  }
+}
+
+.row {
+  display: block;
+  margin-bottom: 1rem;
+
+  p {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 2rem;
+  }
+
+  ul {
+    lost-column: 1/1;
+  }
+}
+
+.grid .offset li {
+  lost-column: 1/3;
+}
+
+.grid .offset li:last-child {
+  lost-offset: clear;
+}
+
+.grid .nesting li {
+  lost-column: 1/3;
+}
+
+.grid .nesting li:nth-child(3) {
+  background: transparent;
+}
+
+.grid .nesting li {
+  div {
+    lost-column: 1/2;
+    background: #ff0000;
+    margin-bottom: 1rem;
+  }
+}
+
+.grid .align {
+  lost-align: center;
+  background: #42cafd;
+  height: 20rem;
+
+  li {
+    lost-column: 1/3;
+    background: #ff0000;
+  }
+}
+
+.grid .cycle {
+  lost-column: 1/1;
+}
+
+.grid .cycle li {
+  height: auto;
+  line-height: 1.5rem;
+  font-weight: normal;
+  lost-column: 2/8 4;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+.grid .vertical {
+  lost-column: 1/1;
+}
+
+.grid .vertical li {
+  lost-row: 1/3;
+}
+
+.grid .waffle {
+  lost-column: 1/1;
+}
+
+.grid .waffle li {
+  lost-waffle: 1/3;
+}
+
+
+

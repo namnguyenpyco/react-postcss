@@ -1,0 +1,52 @@
+$_min-tablet-port: 600px;
+$_min-tablet-land: 900px;
+$_min-desktop: 1200px;
+$_min-big-desktop: 1800px;
+
+@mixin for-phone {
+  @media (min-width: $_min-tablet-port) { @content; }
+}
+
+@mixin for-tablet {
+    @media (min-width: $_min-tablet-land) { @content; }
+  }
+
+@mixin for-desktop {
+  @media (min-width: $_min-desktop) { @content; }
+}
+
+@mixin for-desktop-big {
+    @media (min-width: $_min-big-desktop) { @content; }
+}
+
+.image {
+  background: url('./assets/images/icon.png');
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .image {
+    background: url('./assets/images/icon2x.png');
+    background-repeat: no-repeat;
+  }
+}
+ 
+@media (max-width: 50rem) {
+  .content {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.image-container {
+  width: 100rem;
+  height: 100rem;
+  display: block;
+}
+
+
+ 
+

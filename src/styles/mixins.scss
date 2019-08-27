@@ -1,0 +1,38 @@
+$text_color: #232323;
+$column_layout: 2 - 1;
+
+.menu {
+    width: 100%;
+    color: $text_color;
+    a {
+        text-decoration: none;
+    }
+    &::before {
+        content: '';
+    }
+}
+
+.column {
+    @if $column_layout == 2 {
+        width: 50%;
+        float: left;
+    }   @else {
+        width: 100%;
+    }
+}
+
+@mixin box-container($width, $height) {
+    width: $width;
+    height: $height;
+    background: $text_color;
+    display: block;
+    color: var(--white-color);
+}
+
+@mixin box-color($color) {
+    background: $color;
+    color: var(--white-color);
+    text-align: center;
+    line-height: var(--spacing-normal);
+}
+

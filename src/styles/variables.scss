@@ -1,0 +1,58 @@
+:root {
+	--box-width: 5rem;
+	--main-color: #ff0000;
+	--black-color: #000000;
+	--white-color: #ffffff;
+
+	--spacing-tiny: 1rem;
+	--spacing-small: 2rem;
+	--spacing-normal: 5rem;
+}
+$default : 16px;
+
+$spacing-nano: 0.2rem;
+$spacing-micro: 0.3rem;
+$spacing-tiny: 0.6rem;
+$spacing-x-small: 0.8rem;
+$spacing-small: 1rem;
+$spacing-gutter: 1.25rem;
+$spacing-base: 2rem;
+$spacing-medium: 3.5rem;
+$spacing-large: 5.5rem;
+$spacing-x-large: 10rem;
+$spacing-xx-large: 12rem;
+$spacing-xxx-large: 16rem;
+
+$nav-bar-height: 3.6em;
+$side-nav-bar-width: 12rem;
+$nav-bar-height-mobile: 50px;
+$content-max-width: 120rem;
+$plain-page-width: 80rem;
+$component-max-width: 37.5rem;
+
+$text-shadow-base: 1px 1px 5px $shadow-color;
+$text-shadow-dark: 1px 1px 15px $shadow-color-darker;
+$box-shadow-base: 0 0 25px $shadow-color;
+$box-shadow-discrete: 0 2px 4px $shadow-color-lighter;
+
+$transition-base: all 300ms ease-out;
+$transition-base-in: all 300ms ease-in;
+$transition-fade: opacity .15s linear !default;
+$transition-collapse: height .35s ease !default;
+$transition-fast: all 150ms ease-out;
+
+$border-base: $spacing-micro solid $border-colour;
+$border-thick: $spacing-micro solid;
+$border-thin: 1px solid $border-colour;
+$border-peach: 1px solid $rich-peach;
+$accent-border: $spacing-micro solid $light-cyan;
+$accent-border-thick: $spacing-tiny solid $light-cyan;
+
+$scrollbar-width: $spacing-small * 0.5;
+
+$disabled-button-opacity: 0.6;
+
+$screen-padding: $spacing-base $spacing-small;
+
+$input-width: 12rem;
+$input-width-wide: 24rem;

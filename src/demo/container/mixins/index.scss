@@ -1,0 +1,9 @@
+.grid-6.mixins{ 
+    li {
+        @include box-color($text_color);
+    }
+}
+
+.box-2 {
+    @include box-container(50px, 50px);
+}

@@ -1,0 +1,50 @@
+
+  @include for-phone {
+    body {
+    font-size: 14px;
+  }
+}
+
+  @include for-tablet {
+    body {
+    font-size: 15px;
+  }
+}
+
+  @include for-desktop {
+    body {
+    font-size: 16px;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.u-clearfix::before {
+  content: '';
+  display: table;
+}
+
+.u-clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+::placeholder {
+  color: gray;
+}
+
+.my-link {
+  background: var(--black-color);
+  padding: var(--spacing-tiny);
+  font-size: 2rem;
+  color: var(--white-color);
+  text-decoration: none;
+  margin: var(--spacing-tiny);
+  border-radius: 1rem;
+}
+
+
+

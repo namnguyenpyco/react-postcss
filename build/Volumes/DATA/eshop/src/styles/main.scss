@@ -1,0 +1,49 @@
+body {
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+.u-clearfix::before {
+  content: '';
+  display: table;
+}
+
+.u-clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+::-moz-placeholder {
+  color: gray;
+}
+
+:-ms-input-placeholder {
+  color: gray;
+}
+
+::-ms-input-placeholder {
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
+}
+
+.my-link {
+  background: undefined;
+  padding: undefined;
+  font-size: 2rem;
+  color: undefined;
+  text-decoration: none;
+  margin-left: undefined;
+  margin-bottom: undefined;
+}
+
